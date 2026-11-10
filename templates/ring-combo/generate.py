@@ -586,13 +586,14 @@ def build(a, sections):
         o.append(text(f'目录名{i + 1}', sections[i][0], cx - 220, 893, 440, 64, font=EN, size=20, bold=True, align='center'))
         if sections[i][1]:
             o.append(text(f'目录中文{i + 1}', sections[i][1], cx - 200, 958, 400, 30, size=10, spacing=6, align='center', color='FFFFFF', alpha=0.7))
-    # 目录页标题只放一行：给了中文就用中文，否则用英文
+    # 目录页标题：中文大字在上，英文渐隐小字在下，上下错开不重叠
     if a.contents:
-        o.append(text('目录', a.contents, 610, 120, 700, 120, size=52, bold=True, spacing=18, align='center',
+        o.append(text('目录', a.contents, 610, 95, 700, 120, size=52, bold=True, spacing=18, align='center',
                       shadow={'blur': 10, 'alpha': 0.5, 'dist': 3, 'dir': 90}))
-    elif a.contents_en:
-        o.append(text('CONTENTS', a.contents_en, 460, 130, 1000, 100, font=EN, size=48, bold=True, spacing=16, align='center',
-                      shadow={'blur': 10, 'alpha': 0.5, 'dist': 3, 'dir': 90}))
+    if a.contents_en:
+        o.append(text('CONTENTS', a.contents_en, 460, (225 if a.contents else 130), 1000, 70, font=EN,
+                      size=(26 if a.contents else 44), spacing=13, align='center',
+                      fill={'type': 'grad', 'angle': 90, 'stops': [(0, 'FFFFFF', 0.95), (1, 'FFFFFF', 0.35)]}))
     slides.append({'bg': 'bg', 'objects': o, 'morph': a.duration})
 
     # 第 4-7 页 章节：1 号环放大停在左边，每页顺时针转 90°，章节文字上下滚动
@@ -627,8 +628,8 @@ def main():
     ap.add_argument('--reporter', default='汇报人：XXX', help='封面署名，留空则不显示')
     ap.add_argument('--section', action='append', metavar='"英文标题|中文小字|正文"',
                     help='一个章节，正好传 4 次。用 | 分开三部分，正文里用 \\n 换行；中文小字和正文可以留空')
-    ap.add_argument('--contents', default='', help='目录页中文标题，例如「目 录」；填了就只显示中文')
-    ap.add_argument('--contents-en', default='CONTENTS', help='目录页英文标题（没填 --contents 时显示）')
+    ap.add_argument('--contents', default='目 录', help='目录页中文大字，留空则不显示')
+    ap.add_argument('--contents-en', default='CONTENTS', help='目录页中文下面的英文小字，留空则不显示')
     ap.add_argument('--part-label', default='PART', help='章节页编号下面的小字，留空则不显示')
     ap.add_argument('--image', default=str(HERE / 'example.jpg'), help='底图，16:9 横图最佳，建议 2K 以上')
     ap.add_argument('--title-font', default=str(FONTS / 'MaShanZheng-Regular.ttf'), help='封面标题字体文件')
