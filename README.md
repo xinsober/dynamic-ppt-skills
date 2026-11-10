@@ -11,6 +11,8 @@ AI 会自己选模板、写文案、换上你的图，把做好的 .pptx 交给�
 | 模板 | 效果 | 适合 |
 |---|---|---|
 | [镂空开场 hollow-opening](templates/hollow-opening/) | <img src="templates/hollow-opening/preview.gif" width="320"> | 职业规划大赛、演讲、年终汇报的开场页 |
+| [圆环连招 ring-combo](templates/ring-combo/) | <img src="templates/ring-combo/preview.gif" width="320"> | 封面 + 目录 + 4 个章节一整套，职业规划大赛、答辩、述职 |
+| [旋转转盘 rotary-dial](templates/rotary-dial/) | <img src="templates/rotary-dial/preview.gif" width="320"> | 分 4 部分讲、每页换一张图，年终汇报、项目复盘、作品集 |
 
 ## 怎么用
 
