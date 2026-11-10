@@ -41,8 +41,8 @@ python generate.py --title "大学生职业" --title2 "生涯规划" --reporter 
 | `--title2` | 封面标题第二行，往右错开、字更大，4 个字左右最合适。传 `""` 不显示 | `生涯规划` |
 | `--reporter` | 封面署名条，例如「汇报人：XXX」。传 `""` 不显示 | `汇报人：XXX` |
 | `--section` | 一个章节，**正好传 4 次**。格式 `英文标题\|中文小字\|正文`，正文用 `\n` 换行，最多 2 行；中文小字和正文可以留空 | 认识自我 / 探索职业 / 规划路径 / 行动落地 |
-| `--contents` | 目录页大字。传 `""` 不显示 | `目 录` |
-| `--contents-en` | 目录页大字后面的渐隐英文。传 `""` 不显示 | `CONTENTS` |
+| `--contents` | 目录页中文标题，例如 `目 录`。填了就只显示中文，不显示英文 | 不填 |
+| `--contents-en` | 目录页英文标题，没填 `--contents` 时显示 | `CONTENTS` |
 | `--part-label` | 章节页编号下面的小字。传 `""` 不显示 | `PART` |
 | `--image` | 底图，横图最佳（16:9），建议 2K 以上。整套 7 页共用这一张 | `example.jpg` |
 | `--title-font` | 封面标题字体文件 | `fonts/MaShanZheng-Regular.ttf` |
