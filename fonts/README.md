@@ -14,5 +14,7 @@
 | NotoSansSC-Medium.ttf | 思源黑体 Medium | 署名、小字 |
 | Montserrat-Regular.ttf / Montserrat-Bold.ttf | Montserrat | 英文标题、正文（几何感，圆环连招默认） |
 | Poppins-Regular.ttf / Poppins-Bold.ttf | Poppins | 英文标题、正文（圆润干净，旋转转盘默认） |
+| NotoSerifDisplay-Medium.ttf | Noto Serif Display Medium | 超大衬线数字（数字过渡页默认，会自动做成斜体） |
+| Cinzel-Regular.ttf | Cinzel | 英文大写标题（古典碑刻感，数字过渡页默认） |
 
 想用自己的字体，把字体文件路径传给模板的 `--xxx-font` 参数即可。注意：系统自带字体和付费会员里的字体大多只能自己用，不要放进这个文件夹再分发。
