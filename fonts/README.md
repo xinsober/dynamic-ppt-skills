@@ -11,6 +11,7 @@
 | NotoSansSC-Black.ttf | 思源黑体 Black | 中文镂空大字 |
 | MaShanZheng-Regular.ttf | 马善政毛笔楷书 | 中文标题（书法感） |
 | NotoSerifSC-Bold.ttf | 思源宋体 Bold | 副标题 |
+| NotoSerifSC-Regular.ttf | 思源宋体 Regular | 中文正文、细一点的标题（唱片机结束页默认） |
 | NotoSansSC-Medium.ttf | 思源黑体 Medium | 署名、小字 |
 | Montserrat-Regular.ttf / Montserrat-Bold.ttf | Montserrat | 英文标题、正文（几何感，圆环连招默认） |
 | Poppins-Regular.ttf / Poppins-Bold.ttf | Poppins | 英文标题、正文（圆润干净，旋转转盘默认） |

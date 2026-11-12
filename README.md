@@ -15,6 +15,7 @@ AI 会自己选模板、写文案、换上你的图，把做好的 .pptx 交给�
 | [旋转转盘 rotary-dial](templates/rotary-dial/) | <img src="templates/rotary-dial/preview.gif" width="320"> | 分 4 部分讲、每页换一张图，年终汇报、项目复盘、作品集 |
 | [多图轮播 photo-carousel](templates/photo-carousel/) | <img src="templates/photo-carousel/preview.gif" width="320"> | 照片很多想一页放完：年会、年终总结、团建和活动风采 |
 | [数字过渡页 number-transition](templates/number-transition/) | <img src="templates/number-transition/preview.gif" width="320"> | 「第一部分、第二部分」的章节页，职业规划大赛、答辩、述职 |
+| [唱片机结束页 record-ending](templates/record-ending/) | <img src="templates/record-ending/preview.gif" width="320"> | 最后一页的感谢语：演讲、分享会、课程、职业规划大赛 |
 
 ## 怎么用
 
